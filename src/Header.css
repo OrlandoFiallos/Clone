@@ -1,0 +1,145 @@
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131920; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+.header__search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.header__deals{
+    display: flex;
+    align-items: center;
+    color: #0F1111;
+    font-size: 14px;
+    font-weight: 100;
+    max-height: 100%;
+    width: 70px;
+    background-color: #EFEFEF;
+
+    padding: 10px 0;
+    padding-left: 5px;
+    position: absolute;
+}
+.header__dealsIcon{
+    opacity: .3;
+}
+.header__searchInput{
+    height: 14px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header__searchIcon{
+    padding: 5px;
+    max-height: 100%;
+    background-color: #cd9042;
+    position: absolute;
+    right: 0;
+}
+.header__option1{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header__optionLineOne{
+    font-size: 10px;
+}
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+    
+}
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header__basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header__optionBasket span{
+    color: #cd9042;
+}
+.header__nav1{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+/*Bottom nav start*/
+.bottom__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: #232f3d;
+    height: 41px;
+    padding-left: 5px;
+}
+.bottom__navButton{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 12px;
+    padding-left: 5px;
+    font-weight: 700;
+
+}
+.navButton__contain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bottom__navlinks{
+    display: flex;
+    flex-direction: row;
+    
+}
+.bottom__navlinks p{
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 12px;
+    padding: 8px 9px;
+    margin: 5px 0 6px 0;
+    max-height: 100%;
+
+}
+.bottom__navlinks p:hover{
+    border: 1px solid white;
+    padding: 7px 8px;
+    
+}
+.bottom__navButton :hover{
+    border: 1px solid white;
+
+}
+/*Bottom nav end*/
