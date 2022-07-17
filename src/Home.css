@@ -1,6 +1,42 @@
-.home__image{
-    width: 100%;
-    z-index: -1;
-    margin-bottom: -150px;
-    mask-image: linear-gradient(to bottom,rgba(0,0,0,1), rgba(0,0,0,0));
+.home__container{
+    padding: 14px 18px 18px 18px;
+}
+.home__container h2{
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    color: #0F1111 ;
+
+}
+.home__container span{
+    line-height: 20px;
+    font-size: 14px;
+}
+.row__elements{
+    display: flex;
+    justify-content: space-between;
+    padding-top:25px ;
+    
+}
+.element__one p{
+    font-size: 13px;
+    padding-left: 15px;
+}
+.element__one span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.element__two span,
+.element__two .select > option{
+    font-size: 13px;
+}
+.select{
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-right: 6px;
+    background: #f0f2f2;
+    border: 1px solid #e3e5e5;
+    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.1);
+
 }

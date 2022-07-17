@@ -1,0 +1,111 @@
+.button__oferta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #ffd213;
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn__sideBar{
+    border: none;
+    background: #f3f3f3;
+    text-align: left;
+    padding-left: 0;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.side__bar{
+    /* display: grid;
+    grid-template-columns:  16% ;
+    grid-row-end: ; */
+    border-right: 1px solid rgb(213, 219, 219);
+
+
+}
+.card{
+    padding: 16px;
+    border-right: 1px solid rgb(213, 219, 219);
+    border-bottom: 1px solid rgb(213, 219, 219);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card__aviso{
+    margin-top: 10px;
+    color: #007c9e;
+    line-height: 18px ;
+    font-size: 12px;
+    font-weight: bold;
+}
+.card__price{
+    color: #cf0a3d;
+}
+.departaments{
+    display: flex;
+    flex-direction: column;
+    
+}
+.products__home{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 98vw;
+    border-top: 1px solid rgb(213, 219, 219);
+}
+.products__sideBar{
+    border-right: 1px solid rgb(213, 219, 219);
+
+}
+.products__home  .row{
+    display: grid;
+    grid-template-columns: 16% 84%;
+}
+ .card img{
+    max-width: 100%;
+    height: 234px;
+    margin-bottom: 15px;
+}
+.Cards{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+}
+.side__bar{
+    padding-left: 20px;
+    background: #f3f3f3;
+}
+.side__bar h4{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.side__barLinks p{
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px;
+    color: #007c9e;
+}
+.side__barLinks p:hover{
+    text-decoration: underline;
+    color: #ef7238;
+}
+.side__barLinks .body :first-child{
+    font-weight: bold   ;
+
+}
+.side__barLinks span{
+    height: 50px;
+    color: #ef7238;
+}
+.star{
+    height: 50px;
+    fill: red;
+}
