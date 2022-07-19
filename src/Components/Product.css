@@ -1,0 +1,144 @@
+
+/*General classes*/
+.container{
+    max-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.black{
+    color: black;
+}
+.bold{
+    font-weight: bold;
+}
+.gray{
+    color:rgb(86, 89, 89) ;
+}
+.gray2{
+    /* color: rgb(213, 219, 219); */
+    color: red;
+}
+.linkColor{
+    color: #007c9e;
+}
+.lineH14{
+    line-height: 14px;
+}
+.line2{
+    border-bottom: 1px solid;
+    color: rgb(213, 219, 219);
+}
+.small-text{
+    font-size: 13px;
+    line-height: 14px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+
+
+/*Own classes*/
+.available{
+    color: green;
+}
+.btnHome__icon{
+   margin-right: 5px;
+}
+.product{
+    margin-top: 8px;
+}
+.product__ad{
+    margin-top: 25px;
+}
+.product__btnHome{
+    text-decoration: none;
+}
+.product__btnHome:hover{
+    text-decoration: underline;
+}
+.product__body{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 45% 40% 15%;
+}
+.product__img {
+    max-height: 373px;
+    max-width: 485px;
+}
+.product__thumbnail{
+   
+    text-align: center;
+}
+.product__title{
+    font-size: 24px;
+    font-weight: 400;
+}
+.product__rightCol{
+    padding: 15px;
+    border: 1px solid rgb(213, 219, 219);
+    border-radius: 7px;
+}
+.rightCol__price{
+    margin-bottom: 10px;
+    color:#cf0a3d;
+}
+.rightCol__btn{
+   background:  rgba(255, 210, 64,0.8);
+   text-align: center;
+   padding: 7px;
+   border-radius: 30px;
+}
+.rightCol__btn:hover{
+    background:  rgba(255, 210, 64,1);
+}
+.orange{
+    background: rgba(255, 153, 27,0.8);
+}
+.orange:hover{
+    background: rgba(255, 153, 27,1);
+
+}
+.select__amount{
+    padding: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 6px;
+    background: #f0f2f2;
+    border: 1px solid #e3e5e5;
+    box-shadow: 2px 4px 5px 0px rgb(0 0 0 / 10%);
+}
+.btn__addList{
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid #e3e5e5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ecedf1;
+    border-radius: 4px;
+}
+
+.description{
+ line-height: 20px;
+ font-size: 14px;    
+}
+.circleIcon{
+    font-size: 8px;
+    margin-right: 5px;
+}
+.description__title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.product__centerCol{
+    
+    padding: 0 10px;
+    margin-right: 10px;
+}
+.product__price{
+    display: flex;
+
+}
+.price{
+    font-size: 28px;
+    margin-left: 10px;
+}

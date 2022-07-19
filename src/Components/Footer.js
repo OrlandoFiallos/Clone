@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import LanguageIcon from "@mui/icons-material/Language";
 
 const Footer = () => {
   return (
@@ -88,8 +87,9 @@ const Footer = () => {
         <div className="row">
           <div className="footer__lineNav">
             <img
-              class="header__logo"
+              className="header__logo"
               src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt="amazon logo"
             ></img>
             <span className="btn__link1">
               <p>Español</p>

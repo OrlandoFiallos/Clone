@@ -55,6 +55,7 @@ cursor: pointer;
     text-decoration: underline;
 }
 .footer{
+    margin-top: 70px;
     background: #232f3d;
 }
 .footer .row__1{

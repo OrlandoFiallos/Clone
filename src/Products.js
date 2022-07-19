@@ -2,56 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./Products.css";
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
+import { Link } from "react-router-dom";
+import Home from "./Home";
+import Rating from "./Components/Rating";
 
-const categories = [
-  { categori: "men's clothing" },
-  { categori: "women's clothing" },
-  { categori: "jewelery" },
-  { categori: "electronics" },
-];
 const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
-  const [checkedState, setCheckedState] = useState(
-    new Array(categories.length).fill(false)
-  );
-
-  const handleOnChange = (position) => {
-    const updatedCheckedState = checkedState.map((item, index) =>
-      index === position ? !item : item
-    );
-
-    setCheckedState(updatedCheckedState);
-    // console.log(updatedCheckedState);
-
-    if (updatedCheckedState === true) {
-      filterProduct(data);
-    } else {
-      filterProduct(categories[position]);
-    }
-
-    // if (checkedState === true) {
-    //   setFilter(data);
-    // } else {
-
-    // }
-
-    // if (isChecked === true) {
-    //   setFilter(data);
-    // } else {
-    //   filterProduct("electronics");
-    // }
-  };
-
-  // const handleOnChange = () => {
-  //   setIsChecked(!isChecked);
-  //   if (isChecked === true) {
-  //     setFilter(data);
-  //   } else {
-  //     filterProduct("electronics");
-  //   }
-  // };
 
   let componentMounted = true;
 
@@ -231,10 +189,19 @@ const Products = () => {
                       <p className="card__aviso">
                         Ahorra en {product.category} y más
                       </p>
+                      <p>{product.rating.rate}</p>
+                      <div className="product__rating">
+                        <Rating value={product.rating.rate} />
+                        <p className="rating__count">{product.rating.count}</p>
+                      </div>
                     </div>
-                    <div className="button__oferta">
+
+                    <Link
+                      className="button__oferta"
+                      to={`/product/${product.id}`}
+                    >
                       <p>Ver Oferta</p>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </>
@@ -247,6 +214,7 @@ const Products = () => {
 
   return (
     <div>
+      <Home />
       <div className="products__home">
         <div className="row ">{loading ? <Loading /> : <ShowProducts />}</div>
       </div>
