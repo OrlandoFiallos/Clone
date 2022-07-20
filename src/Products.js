@@ -189,7 +189,7 @@ const Products = () => {
                       <p className="card__aviso">
                         Ahorra en {product.category} y más
                       </p>
-                      <p>{product.rating.rate}</p>
+
                       <div className="product__rating">
                         <Rating value={product.rating.rate} />
                         <p className="rating__count">{product.rating.count}</p>
